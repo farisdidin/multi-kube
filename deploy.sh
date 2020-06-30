@@ -5,8 +5,8 @@
  docker push farisdidin/multi-client:$SHA
  docker push farisdidin/multi-server:latest
  docker push farisdidin/multi-server:$SHA
- docker push farisdidin/multi-woker:latest
- docker push farisdidin/multi-woker:$SHA
+ docker push farisdidin/multi-worker:latest
+ docker push farisdidin/multi-worker:$SHA
  kubectl apply -f k8s
  kubectl set image deployments/server-deployment server=farisdidin/multi-server:$SHA  
  kubectl set image deployments/client-deployment client=farisdidin/multi-client:$SHA
